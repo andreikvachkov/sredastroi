@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СРЕДАСТРОЙ</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header__wrap">
+                <a href="" class="header__logo">
+                    <img src="assets/images/header_logo.svg" alt="">
+                </a>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="">
+                                Проекты
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Квартиры
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Ипотека
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Акции
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Новости
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                О компании
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="" class="header__tel">
+                    8 800 600 26 16
+                </a>
+                <button class="header__mobile_menu">
+                    <div class="open">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 6H3" stroke="#25282B" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M21 12H3" stroke="#25282B" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M21 18H3" stroke="#25282B" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M18 6L6 18" stroke="#25282B" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M6 6L18 18" stroke="#25282B" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="breadcrumbs__wrap">
+                <ul>
+                    <li>
+                        <a href="">
+                            Главная
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Проекты
+                        </a>
+                    </li>
+                    <li>
+                        ЖК «Золотой берег»
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section class="contact_page tab_wrap">
+        <div class="container">
+            <div class="contact_page__wrap">
+                <div class="contact_page__header">
+                    <div class="contact_page__title">
+                        <h1>
+                            Контакты
+                        </h1>
+                    </div>
+                    <div class="contact_page__button">
+                        <button class="btn_tablinks contact_page__tablinks active" onclick="openCity(event, 'офис', this)">офис</button>
+                        <button class="btn_tablinks contact_page__tablinks" onclick="openCity(event, 'проекты', this)">проекты</button>
+                    </div>
+                </div>
+                <div class="contact_page__main">
+                    <div data-city="офис" class="block_tabcontent contact_page__tabcontent" style="display: flex;">
+                        <div class="contact_page__office">
+                            <div class="contact_page__office__top">
+                                <div class="contact_page__office__header">
+                                    <div class="contact_page__office__name">
+                                        Центральный офис СК среда
+                                    </div>
+                                    <div class="contact_page__office__socies">
+                                        <span class="text">
+                                            Мы в соцсетях
+                                        </span>
+                                        <a href="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                viewBox="0 0 22 22" fill="none">
+                                                <g clip-path="url(#clip0_2021_8354)">
+                                                    <path
+                                                        d="M1.83571 20.1667L3.07504 15.6127C2.25842 14.2128 1.82938 12.6207 1.83204 11C1.83204 5.93729 5.93596 1.83337 10.9987 1.83337C16.0615 1.83337 20.1654 5.93729 20.1654 11C20.1654 16.0628 16.0615 20.1667 10.9987 20.1667C9.37876 20.1693 7.78731 19.7406 6.38788 18.9246L1.83571 20.1667ZM7.69046 6.69904C7.57208 6.70639 7.45641 6.73757 7.35038 6.79071C7.25094 6.84702 7.16016 6.91741 7.08088 6.99971C6.97088 7.10329 6.90854 7.19312 6.84163 7.28021C6.50284 7.72112 6.3206 8.26234 6.32371 8.81837C6.32554 9.26754 6.44288 9.70479 6.62621 10.1136C7.00113 10.9405 7.61804 11.8159 8.43296 12.6271C8.62913 12.8224 8.82071 13.0185 9.02696 13.201C10.0384 14.0915 11.2437 14.7337 12.547 15.0765L13.0685 15.1562C13.2381 15.1654 13.4077 15.1525 13.5782 15.1443C13.8452 15.1305 14.1059 15.0582 14.3418 14.9325C14.494 14.8519 14.5655 14.8115 14.6929 14.7309C14.6929 14.7309 14.7323 14.7052 14.8075 14.6484C14.9312 14.5567 15.0073 14.4916 15.11 14.3844C15.186 14.3055 15.252 14.213 15.3025 14.1075C15.374 13.9581 15.4455 13.673 15.4748 13.4356C15.4968 13.2541 15.4904 13.1551 15.4876 13.0937C15.484 12.9956 15.4024 12.8939 15.3135 12.8508L14.78 12.6115C14.78 12.6115 13.9825 12.2641 13.4957 12.0423C13.4444 12.0199 13.3894 12.0072 13.3335 12.0047C13.2707 11.9983 13.2074 12.0053 13.1476 12.0254C13.0878 12.0455 13.0331 12.0781 12.987 12.1211V12.1193C12.9824 12.1193 12.921 12.1715 12.2582 12.9745C12.2202 13.0257 12.1678 13.0643 12.1077 13.0855C12.0476 13.1067 11.9826 13.1096 11.9209 13.0937C11.8611 13.0777 11.8026 13.0575 11.7458 13.0332C11.6321 12.9855 11.5927 12.9672 11.5148 12.9333L11.5102 12.9315C10.9858 12.7025 10.5002 12.3932 10.071 12.0148C9.95554 11.914 9.84829 11.804 9.73829 11.6976C9.37766 11.3523 9.06336 10.9616 8.80329 10.5353L8.74921 10.4482C8.71036 10.3897 8.67896 10.3266 8.65571 10.2603C8.62088 10.1255 8.71163 10.0174 8.71163 10.0174C8.71163 10.0174 8.93438 9.77354 9.03796 9.64154C9.12421 9.53184 9.20468 9.41771 9.27904 9.29962C9.38721 9.12546 9.42113 8.94671 9.36429 8.80829C9.10763 8.18129 8.84179 7.55704 8.56863 6.93737C8.51454 6.81454 8.35413 6.72654 8.20838 6.70912C8.15888 6.70362 8.10938 6.69812 8.05988 6.69446C7.93677 6.68834 7.81342 6.68957 7.69046 6.69812V6.69904Z"
+                                                        fill="#16292C" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_2021_8354">
+                                                        <rect width="22" height="22" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                        <a href="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                viewBox="0 0 22 22" fill="none">
+                                                <path
+                                                    d="M20.5681 4.23723L17.6634 17.9357C17.4441 18.9023 16.8728 19.1429 16.0609 18.6878L11.6347 15.4263L9.49935 17.4805C9.26285 17.717 9.06554 17.9144 8.60972 17.9144L8.92804 13.4071L17.1306 5.99517C17.4874 5.67754 17.0529 5.50085 16.5765 5.81916L6.43585 12.2047L2.07023 10.8379C1.12079 10.5416 1.1036 9.88848 2.26823 9.43267L19.3437 2.85398C20.1343 2.55767 20.8259 3.02998 20.5681 4.23792V4.23723Z"
+                                                    fill="#16292C" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="contact_page__office__content">
+                                    <div class="contact_page__office__item">
+                                        <div class="name">
+                                            Адрес:
+                                        </div>
+                                        <div class="text">
+                                            Краснодар, Силантьева 80/1
+                                        </div>
+                                    </div>
+                                    <div class="contact_page__office__item">
+                                        <div class="name">
+                                            Время работы:
+                                        </div>
+                                        <div class="text">
+                                            09:00-19:00
+                                        </div>
+                                    </div>
+                                    <div class="contact_page__office__item">
+                                        <div class="name">
+                                            Телефон
+                                        </div>
+                                        <a href="">
+                                            8800 600 26 16
+                                        </a>
+                                    </div>
+                                    <div class="contact_page__office__item">
+                                        <div class="name">
+                                            E-mail
+                                        </div>
+                                        <a href="">
+                                            Info@sreda.ru
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="contact_page__office__socies_mobile">
+                                    <span class="text">
+                                        Мы в соцсетях
+                                    </span>
+                                    <a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                            viewBox="0 0 22 22" fill="none">
+                                            <g clip-path="url(#clip0_2021_8354)">
+                                                <path
+                                                    d="M1.83571 20.1667L3.07504 15.6127C2.25842 14.2128 1.82938 12.6207 1.83204 11C1.83204 5.93729 5.93596 1.83337 10.9987 1.83337C16.0615 1.83337 20.1654 5.93729 20.1654 11C20.1654 16.0628 16.0615 20.1667 10.9987 20.1667C9.37876 20.1693 7.78731 19.7406 6.38788 18.9246L1.83571 20.1667ZM7.69046 6.69904C7.57208 6.70639 7.45641 6.73757 7.35038 6.79071C7.25094 6.84702 7.16016 6.91741 7.08088 6.99971C6.97088 7.10329 6.90854 7.19312 6.84163 7.28021C6.50284 7.72112 6.3206 8.26234 6.32371 8.81837C6.32554 9.26754 6.44288 9.70479 6.62621 10.1136C7.00113 10.9405 7.61804 11.8159 8.43296 12.6271C8.62913 12.8224 8.82071 13.0185 9.02696 13.201C10.0384 14.0915 11.2437 14.7337 12.547 15.0765L13.0685 15.1562C13.2381 15.1654 13.4077 15.1525 13.5782 15.1443C13.8452 15.1305 14.1059 15.0582 14.3418 14.9325C14.494 14.8519 14.5655 14.8115 14.6929 14.7309C14.6929 14.7309 14.7323 14.7052 14.8075 14.6484C14.9312 14.5567 15.0073 14.4916 15.11 14.3844C15.186 14.3055 15.252 14.213 15.3025 14.1075C15.374 13.9581 15.4455 13.673 15.4748 13.4356C15.4968 13.2541 15.4904 13.1551 15.4876 13.0937C15.484 12.9956 15.4024 12.8939 15.3135 12.8508L14.78 12.6115C14.78 12.6115 13.9825 12.2641 13.4957 12.0423C13.4444 12.0199 13.3894 12.0072 13.3335 12.0047C13.2707 11.9983 13.2074 12.0053 13.1476 12.0254C13.0878 12.0455 13.0331 12.0781 12.987 12.1211V12.1193C12.9824 12.1193 12.921 12.1715 12.2582 12.9745C12.2202 13.0257 12.1678 13.0643 12.1077 13.0855C12.0476 13.1067 11.9826 13.1096 11.9209 13.0937C11.8611 13.0777 11.8026 13.0575 11.7458 13.0332C11.6321 12.9855 11.5927 12.9672 11.5148 12.9333L11.5102 12.9315C10.9858 12.7025 10.5002 12.3932 10.071 12.0148C9.95554 11.914 9.84829 11.804 9.73829 11.6976C9.37766 11.3523 9.06336 10.9616 8.80329 10.5353L8.74921 10.4482C8.71036 10.3897 8.67896 10.3266 8.65571 10.2603C8.62088 10.1255 8.71163 10.0174 8.71163 10.0174C8.71163 10.0174 8.93438 9.77354 9.03796 9.64154C9.12421 9.53184 9.20468 9.41771 9.27904 9.29962C9.38721 9.12546 9.42113 8.94671 9.36429 8.80829C9.10763 8.18129 8.84179 7.55704 8.56863 6.93737C8.51454 6.81454 8.35413 6.72654 8.20838 6.70912C8.15888 6.70362 8.10938 6.69812 8.05988 6.69446C7.93677 6.68834 7.81342 6.68957 7.69046 6.69812V6.69904Z"
+                                                    fill="#16292C" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_2021_8354">
+                                                    <rect width="22" height="22" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                            viewBox="0 0 22 22" fill="none">
+                                            <path
+                                                d="M20.5681 4.23723L17.6634 17.9357C17.4441 18.9023 16.8728 19.1429 16.0609 18.6878L11.6347 15.4263L9.49935 17.4805C9.26285 17.717 9.06554 17.9144 8.60972 17.9144L8.92804 13.4071L17.1306 5.99517C17.4874 5.67754 17.0529 5.50085 16.5765 5.81916L6.43585 12.2047L2.07023 10.8379C1.12079 10.5416 1.1036 9.88848 2.26823 9.43267L19.3437 2.85398C20.1343 2.55767 20.8259 3.02998 20.5681 4.23792V4.23723Z"
+                                                fill="#16292C" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="contact_page__office__map">
+                                    <iframe
+                                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A3403f1ce620b0a8fbc50177f4a402f7c835a01d96001345162156bfb76408de5&amp;source=constructor"
+                                        width="500" height="400" frameborder="0"></iframe>
+                                </div>
+                            </div>
+                            <div class="contact_page__office__bottom">
+                                <div class="item">
+                                    <div class="name">
+                                        Отдел продаж
+                                    </div>
+                                    <div class="content">
+                                        <div class="text">
+                                            Телефон
+                                        </div>
+                                        <a href="">
+                                            8800 600 26 16
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="name">
+                                        юридический Отдел
+                                    </div>
+                                    <div class="content">
+                                        <div class="text">
+                                            Телефон
+                                        </div>
+                                        <a href="">
+                                            8800 600 26 16
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="name">
+                                        Отдел бухгалтерии
+                                    </div>
+                                    <div class="content">
+                                        <div class="text">
+                                            Телефон
+                                        </div>
+                                        <a href="">
+                                            8800 600 26 16
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="name">
+                                        пресс-центр
+                                    </div>
+                                    <div class="content">
+                                        <div class="text">
+                                            Телефон
+                                        </div>
+                                        <a href="">
+                                            8800 600 26 16
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-city="проекты" class="block_tabcontent contact_page__tabcontent" >
+                        <div class="contact_page__project">
+                            <details class="contact_page__project__accordion">
+                                <summary>
+                                    <div class="contact_page__project__img">
+                                        <img src="assets/images/contact_project.png" alt="">
+                                    </div>
+                                    <div class="contact_page__project__name">
+                                        ЖК Золотой берег
+                                    </div>
+                                </summary>
+                                <div class="content">
+                                    <div class="contact_page__project__top">
+                                        <div class="contact_page__project__content">
+                                            <div class="contact_page__project__item">
+                                                <div class="name">
+                                                    Адрес:
+                                                </div>
+                                                <div class="text">
+                                                    Краснодар, Силантьева 80/1
+                                                </div>
+                                            </div>
+                                            <div class="contact_page__project__item">
+                                                <div class="name">
+                                                    Время работы:
+                                                </div>
+                                                <div class="text">
+                                                    09:00-19:00
+                                                </div>
+                                            </div>
+                                            <div class="contact_page__project__item">
+                                                <div class="name">
+                                                    Телефон
+                                                </div>
+                                                <a href="">
+                                                    8800 600 26 16
+                                                </a>
+                                            </div>
+                                            <div class="contact_page__project__item">
+                                                <div class="name">
+                                                    E-mail
+                                                </div>
+                                                <a href="">
+                                                    Info@sreda.ru
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="contact_page__project__map">
+                                            <iframe
+                                                src="https://yandex.ru/map-widget/v1/?um=constructor%3A3403f1ce620b0a8fbc50177f4a402f7c835a01d96001345162156bfb76408de5&amp;source=constructor"
+                                                width="500" height="400" frameborder="0"></iframe>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="contact_page__project__bottom">
+                                        <div class="item">
+                                            <div class="name">
+                                                Отдел продаж
+                                            </div>
+                                            <div class="content">
+                                                <div class="text">
+                                                    Телефон
+                                                </div>
+                                                <a href="">
+                                                    8800 600 26 16
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="name">
+                                                юридический Отдел
+                                            </div>
+                                            <div class="content">
+                                                <div class="text">
+                                                    Телефон
+                                                </div>
+                                                <a href="">
+                                                    8800 600 26 16
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="name">
+                                                Отдел бухгалтерии
+                                            </div>
+                                            <div class="content">
+                                                <div class="text">
+                                                    Телефон
+                                                </div>
+                                                <a href="">
+                                                    8800 600 26 16
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="name">
+                                                пресс-центр
+                                            </div>
+                                            <div class="content">
+                                                <div class="text">
+                                                    Телефон
+                                                </div>
+                                                <a href="">
+                                                    8800 600 26 16
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </details>
+                            <details class="contact_page__project__accordion">
+                                <summary>
+                                    <div class="contact_page__project__img">
+                                        <img src="assets/images/contact_project.png" alt="">
+                                    </div>
+                                    <div class="contact_page__project__name">
+                                        ЖК Золотой берег
+                                    </div>
+                                </summary>
+                                <div class="content">
+                                    <div class="contact_page__project__top">
+                                        <div class="contact_page__project__content">
+                                            <div class="contact_page__project__item">
+                                                <div class="name">
+                                                    Адрес:
+                                                </div>
+                                                <div class="text">
+                                                    Краснодар, Силантьева 80/1
+                                                </div>
+                                            </div>
+                                            <div class="contact_page__project__item">
+                                                <div class="name">
+                                                    Время работы:
+                                                </div>
+                                                <div class="text">
+                                                    09:00-19:00
+                                                </div>
+                                            </div>
+                                            <div class="contact_page__project__item">
+                                                <div class="name">
+                                                    Телефон
+                                                </div>
+                                                <a href="">
+                                                    8800 600 26 16
+                                                </a>
+                                            </div>
+                                            <div class="contact_page__project__item">
+                                                <div class="name">
+                                                    E-mail
+                                                </div>
+                                                <a href="">
+                                                    Info@sreda.ru
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="contact_page__project__map">
+                                            <iframe
+                                                src="https://yandex.ru/map-widget/v1/?um=constructor%3A3403f1ce620b0a8fbc50177f4a402f7c835a01d96001345162156bfb76408de5&amp;source=constructor"
+                                                width="500" height="400" frameborder="0"></iframe>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="contact_page__project__bottom">
+                                        <div class="item">
+                                            <div class="name">
+                                                Отдел продаж
+                                            </div>
+                                            <div class="content">
+                                                <div class="text">
+                                                    Телефон
+                                                </div>
+                                                <a href="">
+                                                    8800 600 26 16
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="name">
+                                                юридический Отдел
+                                            </div>
+                                            <div class="content">
+                                                <div class="text">
+                                                    Телефон
+                                                </div>
+                                                <a href="">
+                                                    8800 600 26 16
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="name">
+                                                Отдел бухгалтерии
+                                            </div>
+                                            <div class="content">
+                                                <div class="text">
+                                                    Телефон
+                                                </div>
+                                                <a href="">
+                                                    8800 600 26 16
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="name">
+                                                пресс-центр
+                                            </div>
+                                            <div class="content">
+                                                <div class="text">
+                                                    Телефон
+                                                </div>
+                                                <a href="">
+                                                    8800 600 26 16
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </details>
+                            <details class="contact_page__project__accordion">
+                                <summary>
+                                    <div class="contact_page__project__img">
+                                        <img src="assets/images/contact_project.png" alt="">
+                                    </div>
+                                    <div class="contact_page__project__name">
+                                        ЖК Золотой берег
+                                    </div>
+                                </summary>
+                                <div class="content">
+                                    <div class="contact_page__project__top">
+                                        <div class="contact_page__project__content">
+                                            <div class="contact_page__project__item">
+                                                <div class="name">
+                                                    Адрес:
+                                                </div>
+                                                <div class="text">
+                                                    Краснодар, Силантьева 80/1
+                                                </div>
+                                            </div>
+                                            <div class="contact_page__project__item">
+                                                <div class="name">
+                                                    Время работы:
+                                                </div>
+                                                <div class="text">
+                                                    09:00-19:00
+                                                </div>
+                                            </div>
+                                            <div class="contact_page__project__item">
+                                                <div class="name">
+                                                    Телефон
+                                                </div>
+                                                <a href="">
+                                                    8800 600 26 16
+                                                </a>
+                                            </div>
+                                            <div class="contact_page__project__item">
+                                                <div class="name">
+                                                    E-mail
+                                                </div>
+                                                <a href="">
+                                                    Info@sreda.ru
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="contact_page__project__map">
+                                            <iframe
+                                                src="https://yandex.ru/map-widget/v1/?um=constructor%3A3403f1ce620b0a8fbc50177f4a402f7c835a01d96001345162156bfb76408de5&amp;source=constructor"
+                                                width="500" height="400" frameborder="0"></iframe>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="contact_page__project__bottom">
+                                        <div class="item">
+                                            <div class="name">
+                                                Отдел продаж
+                                            </div>
+                                            <div class="content">
+                                                <div class="text">
+                                                    Телефон
+                                                </div>
+                                                <a href="">
+                                                    8800 600 26 16
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="name">
+                                                юридический Отдел
+                                            </div>
+                                            <div class="content">
+                                                <div class="text">
+                                                    Телефон
+                                                </div>
+                                                <a href="">
+                                                    8800 600 26 16
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="name">
+                                                Отдел бухгалтерии
+                                            </div>
+                                            <div class="content">
+                                                <div class="text">
+                                                    Телефон
+                                                </div>
+                                                <a href="">
+                                                    8800 600 26 16
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="name">
+                                                пресс-центр
+                                            </div>
+                                            <div class="content">
+                                                <div class="text">
+                                                    Телефон
+                                                </div>
+                                                <a href="">
+                                                    8800 600 26 16
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__left">
+                    <a href="" class="footer__logo">
+                        <img src="assets/images/footer_logo.png" alt="">
+                    </a>
+                    <div class="footer__address">
+                        Краснодар, Силантьева 80/1
+                    </div>
+                    <a href="" class="footer__phone">
+                        8 800 600 26 16
+                    </a>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__right_top">
+                        <div class="footer__item">
+                            <div class="name">
+                                Покупателям
+                            </div>
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            Акции
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Новости и статьи
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Реквизиты и документы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Ипотека
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Политика конфиденциальности
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer__item">
+                            <div class="name">
+                                Недвижимость
+                            </div>
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            Квартиры
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Коммерческие помещения
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer__item">
+                            <div class="name">
+                                Компания
+                            </div>
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            О компании
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Контакты
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="footer__right__bottom">
+                        <span>
+                            <img src="assets/images/copyright.svg" alt="">
+                            2017-2024 СК«Средастрой».
+                        </span>
+                        <span>
+                            Hе является публичной офертой
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="mobile_menu">
+        <div class="mobile_menu__container">
+            <div class="mobile_menu__wrap">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="">
+                                Квартиры
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Проекты
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Ипотека
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Акции
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Новости
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                О компани
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
