@@ -1,22 +1,4 @@
-const mapElement = document.querySelector('.project_genplan__map');
-const indicator = document.querySelector('.scroll__indicator');
-const lineWidth = document.querySelector('.scroll__line').offsetWidth;
-const indicatorWidth = indicator.offsetWidth;
-const maxLeft = lineWidth - indicatorWidth;
 
-mapElement.addEventListener('scroll', function () {
-    updateScrollIndicator(mapElement);
-});
-
-function updateScrollIndicator(container) {
-    const scrollLeft = container.scrollLeft;
-    const scrollWidth = container.scrollWidth - container.clientWidth;
-
-    const scrollPercentage = (scrollLeft / scrollWidth) * 100;
-
-    const left = (scrollPercentage / 100) * maxLeft;
-    indicator.style.left = `${left}px`;
-}
 
 
 function openCity(evt, cityName, button) {
