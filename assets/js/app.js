@@ -111,20 +111,21 @@ function openMenu() {
 
 $('.header__mobile_menu').on('click', openMenu);
 
+function openSort() {
+    $('.project_catalog__main__sort .content, .catalog_products__sort .content').toggleClass('active');
+    $('.project_catalog__main__sort .sort_btn, .catalog_products__sort .sort_btn').toggleClass('active');
+}
+
+$('.project_catalog__main__sort .sort_btn, .catalog_products__sort .sort_btn').on('click', openSort);
+
+function openProject() {
+    $('.catalog_filter__project .project_list').toggleClass('active');
+    $('.catalog_filter__project .project_btn').toggleClass('active');
+}
+
+$('.catalog_filter__project .project_btn').on('click', openProject);
 
 
-// Получаем элементы
-const videoContainer = document.getElementById('videoContainer');
-const playButton = document.getElementById('playButton');
-const videoIframe = document.getElementById('videoIframe');
-const previewImage = document.querySelector('.preview'); // Постер видео
-
-// Добавляем обработчик клика
-playButton.addEventListener('click', () => {
-    videoIframe.style.display = 'block'; // Показываем видео
-    playButton.style.display = 'none';   // Скрываем кнопку
-    previewImage.style.display = 'none'; // Скрываем превью
-});
 
 const project_finishing__swiper = new Swiper('.project_finishing__swiper', {
     slidesPerView: 'auto',
@@ -292,3 +293,20 @@ function closeConsul() {
 $('.consul_popup__close').on('click', closeConsul);
 
 $('.project_finishing__open').on('click', openConsul);
+
+
+function openBron() {
+    $('.bron_popup').addClass('active');
+    $('.popup_bg').addClass('active');
+    $('body').addClass('no-scroll');
+}
+
+function closeBron() {
+    $('.bron_popup').removeClass('active');
+    $('.popup_bg').removeClass('active');
+    $('body').removeClass('no-scroll');
+}
+
+$('.bron_popup__close').on('click', closeBron);
+
+$('.catalog_products__product__btn').on('click', openBron);

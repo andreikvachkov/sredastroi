@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СРЕДАСТРОЙ</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="catalog">
+    <header>
+        <div class="container">
+            <div class="header__wrap">
+                <a href="" class="header__logo">
+                    <img src="assets/images/header_logo.svg" alt="">
+                </a>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="">
+                                Проекты
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Квартиры
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Ипотека
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Акции
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Новости
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                О компании
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="" class="header__tel">
+                    8 800 600 26 16
+                </a>
+                <button class="header__mobile_menu">
+                    <div class="open">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 6H3" stroke="#25282B" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M21 12H3" stroke="#25282B" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M21 18H3" stroke="#25282B" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M18 6L6 18" stroke="#25282B" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M6 6L18 18" stroke="#25282B" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="catalog_filter">
+        <div class="container">
+            <div class="catalog_filter__wrap">
+                <div class="breadcrumbs__wrap">
+                    <ul>
+                        <li>
+                            <a href="">
+                                Главная
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Проекты
+                            </a>
+                        </li>
+                        <li>
+                            ЖК «Золотой берег»
+                        </li>
+                    </ul>
+                </div>
+                <div class="catalog_filter__title">
+                    <h1>
+                        Выбор квартир
+                    </h1>
+                </div>
+                <div class="catalog_filter__main">
+                    <div class="catalog_filter__project">
+                        <div class="name">
+                            Проект
+                        </div>
+                        <div class="content">
+                            <button class="project_btn">
+                                Любой
+                            </button>
+                            <div class="project_list">
+                                <button>
+                                    ЖК «Золотой берег»
+                                </button>
+                                <button class="active">
+                                    ЖК «Золотой берег»
+                                </button>
+                                <button>
+                                    ЖК «Золотой берег»
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog_filter__rooms">
+                        <div class="name">
+                            Количество комнат
+                        </div>
+                        <div class="content">
+                            <div class="radio">
+                                <input class="custom-radio" type="radio" id="rooms-1" name="rooms" value="indigo">
+                                <label for="rooms-1">Все</label>
+                            </div>
+                            <div class="radio">
+                                <input class="custom-radio" type="radio" id="rooms-2" name="rooms" value="indigo">
+                                <label for="rooms-2">С</label>
+                            </div>
+                            <div class="radio">
+                                <input class="custom-radio" type="radio" id="rooms-3" name="rooms" value="indigo">
+                                <label for="rooms-3">1</label>
+                            </div>
+                            <div class="radio">
+                                <input class="custom-radio" type="radio" id="rooms-4" name="rooms" value="indigo">
+                                <label for="rooms-4">2</label>
+                            </div>
+                            <div class="radio">
+                                <input class="custom-radio" type="radio" id="rooms-5" name="rooms" value="indigo">
+                                <label for="rooms-5">3</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog_filter__price">
+                        <div class="name">
+                            Стоимость, млн ₽
+                        </div>
+                        <div class="content">
+
+                            <div class="custom-wrapper">
+                                <div class="price-input-container">
+                                    <div class="price-input">
+                                        <div class="price-field">
+                                            <span>от</span>
+                                            <input type="number" class="min-input" value="1" min="0" max="50" step="0.1"
+                                                readonly>
+                                        </div>
+                                        <div class="price-field">
+                                            <span>до</span>
+                                            <input type="number" class="max-input" value="50" min="0" max="50"
+                                                step="0.1" readonly>
+                                        </div>
+                                    </div>
+                                    <div class="slider-container">
+                                        <div class="price-slider"></div>
+                                    </div>
+                                </div>
+                                <div class="range-input">
+                                    <input type="range" class="min-range" min="0" max="50" value="1" step="0.1">
+                                    <input type="range" class="max-range" min="0" max="50" value="50" step="0.1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog_filter__area">
+                        <div class="name">
+                            Площадь, м2
+                        </div>
+                        <div class="content">
+                            <div class="custom-wrapper">
+                                <div class="price-input-container">
+                                    <div class="price-input">
+                                        <div class="price-field">
+                                            <span>от</span>
+                                            <input type="number" class="min-input" value="1" min="0" max="50" step="0.1"
+                                                readonly>
+                                        </div>
+                                        <div class="price-field">
+                                            <span>до</span>
+                                            <input type="number" class="max-input" value="50" min="0" max="50"
+                                                step="0.1" readonly>
+                                        </div>
+                                    </div>
+                                    <div class="slider-container">
+                                        <div class="price-slider"></div>
+                                    </div>
+                                </div>
+                                <div class="range-input">
+                                    <input type="range" class="min-range" min="0" max="50" value="1" step="0.1">
+                                    <input type="range" class="max-range" min="0" max="50" value="50" step="0.1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog_filter__bottom">
+                    <div class="product__count">
+                        Всего 398 квартир
+                    </div>
+                    <button class="project_catalog__full_filter">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                            <g clip-path="url(#clip0_2003_12496)">
+                                <path
+                                    d="M2.5 3.5C3.32843 3.5 4 2.82843 4 2C4 1.17157 3.32843 0.5 2.5 0.5C1.67157 0.5 1 1.17157 1 2C1 2.82843 1.67157 3.5 2.5 3.5Z"
+                                    stroke="#000001" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M4 2H14" stroke="#000001" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M7.5 8.5C8.32843 8.5 9 7.82843 9 7C9 6.17157 8.32843 5.5 7.5 5.5C6.67157 5.5 6 6.17157 6 7C6 7.82843 6.67157 8.5 7.5 8.5Z"
+                                    stroke="#000001" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M1 7H6" stroke="#000001" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M9 7H14" stroke="#000001" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M12.5 13.5C13.3284 13.5 14 12.8284 14 12C14 11.1716 13.3284 10.5 12.5 10.5C11.6716 10.5 11 11.1716 11 12C11 12.8284 11.6716 13.5 12.5 13.5Z"
+                                    stroke="#000001" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M11 12H1" stroke="#000001" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2003_12496">
+                                    <rect width="14" height="14" fill="white" transform="translate(0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        Все фильтры
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="catalog_products">
+        <div class="container">
+            <div class="catalog_products__wrap">
+                <div class="catalog_products__sort">
+                    <button class="sort_btn">
+                        По умолчанию
+                    </button>
+                    <div class="content">
+                        <button>
+                            Сначала дешевле
+                        </button>
+                        <button class="active">
+                            Сначала дороже
+                        </button>
+                        <button>
+                            С меньшей площадью
+                        </button>
+                        <button>
+                            С большей площадью
+                        </button>
+                    </div>
+                </div>
+                <div class="catalog_products__main">
+                    <div class="catalog_products__product">
+                        <div class="catalog_products__product__name">
+                            ЖК Золотой берег
+                        </div>
+                        <div class="catalog_products__product__srok">
+                            Срок садчи: II кв. 2025
+                        </div>
+                        <div class="catalog_products__product__img">
+                            <img src="assets/images/product.png" alt="">
+                        </div>
+                        <div class="catalog_products__product__info">
+                            <div class="rooms">
+                                1-ком.
+                            </div>
+                            <div class="area">
+                                28,5 м2
+                            </div>
+                            <div class="price">
+                                12 028 238 ₽
+                            </div>
+                        </div>
+                        <div class="catalog_products__product__btn">
+                            Забронировать
+                        </div>
+                    </div>
+                    <div class="catalog_products__product">
+                        <div class="catalog_products__product__name">
+                            ЖК Золотой берег
+                        </div>
+                        <div class="catalog_products__product__srok">
+                            Срок садчи: II кв. 2025
+                        </div>
+                        <div class="catalog_products__product__img">
+                            <img src="assets/images/product.png" alt="">
+                        </div>
+                        <div class="catalog_products__product__info">
+                            <div class="rooms">
+                                1-ком.
+                            </div>
+                            <div class="area">
+                                28,5 м2
+                            </div>
+                            <div class="price">
+                                12 028 238 ₽
+                            </div>
+                        </div>
+                        <div class="catalog_products__product__btn">
+                            Забронировать
+                        </div>
+                    </div>
+                    <div class="catalog_products__product">
+                        <div class="catalog_products__product__name">
+                            ЖК Золотой берег
+                        </div>
+                        <div class="catalog_products__product__srok">
+                            Срок садчи: II кв. 2025
+                        </div>
+                        <div class="catalog_products__product__img">
+                            <img src="assets/images/product.png" alt="">
+                        </div>
+                        <div class="catalog_products__product__info">
+                            <div class="rooms">
+                                1-ком.
+                            </div>
+                            <div class="area">
+                                28,5 м2
+                            </div>
+                            <div class="price">
+                                12 028 238 ₽
+                            </div>
+                        </div>
+                        <div class="catalog_products__product__btn">
+                            Забронировать
+                        </div>
+                    </div>
+                    <div class="catalog_products__product">
+                        <div class="catalog_products__product__name">
+                            ЖК Золотой берег
+                        </div>
+                        <div class="catalog_products__product__srok">
+                            Срок садчи: II кв. 2025
+                        </div>
+                        <div class="catalog_products__product__img">
+                            <img src="assets/images/product.png" alt="">
+                        </div>
+                        <div class="catalog_products__product__info">
+                            <div class="rooms">
+                                1-ком.
+                            </div>
+                            <div class="area">
+                                28,5 м2
+                            </div>
+                            <div class="price">
+                                12 028 238 ₽
+                            </div>
+                        </div>
+                        <div class="catalog_products__product__btn">
+                            Забронировать
+                        </div>
+                    </div>
+                    <div class="catalog_products__product">
+                        <div class="catalog_products__product__name">
+                            ЖК Золотой берег
+                        </div>
+                        <div class="catalog_products__product__srok">
+                            Срок садчи: II кв. 2025
+                        </div>
+                        <div class="catalog_products__product__img">
+                            <img src="assets/images/product.png" alt="">
+                        </div>
+                        <div class="catalog_products__product__info">
+                            <div class="rooms">
+                                1-ком.
+                            </div>
+                            <div class="area">
+                                28,5 м2
+                            </div>
+                            <div class="price">
+                                12 028 238 ₽
+                            </div>
+                        </div>
+                        <div class="catalog_products__product__btn">
+                            Забронировать
+                        </div>
+                    </div>
+                    <div class="catalog_products__product">
+                        <div class="catalog_products__product__name">
+                            ЖК Золотой берег
+                        </div>
+                        <div class="catalog_products__product__srok">
+                            Срок садчи: II кв. 2025
+                        </div>
+                        <div class="catalog_products__product__img">
+                            <img src="assets/images/product.png" alt="">
+                        </div>
+                        <div class="catalog_products__product__info">
+                            <div class="rooms">
+                                1-ком.
+                            </div>
+                            <div class="area">
+                                28,5 м2
+                            </div>
+                            <div class="price">
+                                12 028 238 ₽
+                            </div>
+                        </div>
+                        <div class="catalog_products__product__btn">
+                            Забронировать
+                        </div>
+                    </div>
+                    <div class="catalog_products__product">
+                        <div class="catalog_products__product__name">
+                            ЖК Золотой берег
+                        </div>
+                        <div class="catalog_products__product__srok">
+                            Срок садчи: II кв. 2025
+                        </div>
+                        <div class="catalog_products__product__img">
+                            <img src="assets/images/product.png" alt="">
+                        </div>
+                        <div class="catalog_products__product__info">
+                            <div class="rooms">
+                                1-ком.
+                            </div>
+                            <div class="area">
+                                28,5 м2
+                            </div>
+                            <div class="price">
+                                12 028 238 ₽
+                            </div>
+                        </div>
+                        <div class="catalog_products__product__btn">
+                            Забронировать
+                        </div>
+                    </div>
+                    <div class="catalog_products__product">
+                        <div class="catalog_products__product__name">
+                            ЖК Золотой берег
+                        </div>
+                        <div class="catalog_products__product__srok">
+                            Срок садчи: II кв. 2025
+                        </div>
+                        <div class="catalog_products__product__img">
+                            <img src="assets/images/product.png" alt="">
+                        </div>
+                        <div class="catalog_products__product__info">
+                            <div class="rooms">
+                                1-ком.
+                            </div>
+                            <div class="area">
+                                28,5 м2
+                            </div>
+                            <div class="price">
+                                12 028 238 ₽
+                            </div>
+                        </div>
+                        <div class="catalog_products__product__btn">
+                            Забронировать
+                        </div>
+                    </div>
+                    <div class="catalog_products__product">
+                        <div class="catalog_products__product__name">
+                            ЖК Золотой берег
+                        </div>
+                        <div class="catalog_products__product__srok">
+                            Срок садчи: II кв. 2025
+                        </div>
+                        <div class="catalog_products__product__img">
+                            <img src="assets/images/product.png" alt="">
+                        </div>
+                        <div class="catalog_products__product__info">
+                            <div class="rooms">
+                                1-ком.
+                            </div>
+                            <div class="area">
+                                28,5 м2
+                            </div>
+                            <div class="price">
+                                12 028 238 ₽
+                            </div>
+                        </div>
+                        <div class="catalog_products__product__btn">
+                            Забронировать
+                        </div>
+                    </div>
+
+                </div>
+                <div class="catalog_products__bottom">
+                    <button class="more_btn">
+                        Показать еще
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                            fill="none">
+                            <path d="M10 4.16699V15.8337" stroke="#16292C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M4.1665 10H15.8332" stroke="#16292C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <nav class="pagination">
+                        <ul>
+                            <li>
+                                <span>
+                                    1
+                                </span>
+                            </li>
+                            <li>
+                                <a href="">
+                                    2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    3
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    4
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__left">
+                    <a href="" class="footer__logo">
+                        <img src="assets/images/footer_logo.png" alt="">
+                    </a>
+                    <div class="footer__address">
+                        Краснодар, Силантьева 80/1
+                    </div>
+                    <a href="" class="footer__phone">
+                        8 800 600 26 16
+                    </a>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__right_top">
+                        <div class="footer__item">
+                            <div class="name">
+                                Покупателям
+                            </div>
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            Акции
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Новости и статьи
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Реквизиты и документы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Ипотека
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Политика конфиденциальности
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer__item">
+                            <div class="name">
+                                Недвижимость
+                            </div>
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            Квартиры
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Коммерческие помещения
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer__item">
+                            <div class="name">
+                                Компания
+                            </div>
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            О компании
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Контакты
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="footer__right__bottom">
+                        <span>
+                            <img src="assets/images/copyright.svg" alt="">
+                            2017-2024 СК«Средастрой».
+                        </span>
+                        <span>
+                            Hе является публичной офертой
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="mobile_menu">
+        <div class="mobile_menu__container">
+            <div class="mobile_menu__wrap">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="">
+                                Квартиры
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Проекты
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Ипотека
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Акции
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Новости
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                О компани
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="bron_popup">
+        <div class="bron_popup__container">
+            <button class="bron_popup__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 6L6 18" stroke="#25282B" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M6 6L18 18" stroke="#25282B" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="bron_popup__wrap">
+                <div class="bron_popup__title">
+                    Заполните данные для бронирования
+                </div>
+                <div class="bron_popup__text">
+                    После оформления бесплатного бронирования квартира будет закреплена за вами на 24 часа.  Менеджер свяжется с вами для уточнения следующих шагов.
+                </div>
+                <form action="">
+                    <div class="bron_popup__form_input">
+                        <input type="text" placeholder="Имя">
+                        <input type="text" placeholder="Телефон*">
+                    </div>
+                    <div class="checkbox">
+                        <input class="custom-checkbox" type="checkbox" id="policy-1" name="policy" value="indigo">
+                        <label for="policy-1">Я соглашаюсь на обработку персональных данных</label>
+                    </div>
+                    <button>
+                        Забронировать бесплатно
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="popup_bg"></div>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

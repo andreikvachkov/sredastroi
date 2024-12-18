@@ -1884,7 +1884,7 @@
             </div>
         </div>
     </div>
-    <div class="gallery_popup ">
+    <div class="gallery_popup">
         <div class="gallery_popup__container">
             <button class="gallery_popup__close">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -2146,7 +2146,7 @@
             </div>
         </div>
     </div>
-    <div class="consul_popup">
+    <div class="consul_popup ">
         <div class="consul_popup__container">
             <button class="consul_popup__close">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -2197,6 +2197,20 @@
             const left = (scrollPercentage / 100) * maxLeft;
             indicator.style.left = `${left}px`;
         }
+    </script>
+    <script>
+        // Получаем элементы
+        const videoContainer = document.getElementById('videoContainer');
+        const playButton = document.getElementById('playButton');
+        const videoIframe = document.getElementById('videoIframe');
+        const previewImage = document.querySelector('.preview'); // Постер видео
+
+        // Добавляем обработчик клика
+        playButton.addEventListener('click', () => {
+            videoIframe.style.display = 'block'; // Показываем видео
+            playButton.style.display = 'none';   // Скрываем кнопку
+            previewImage.style.display = 'none'; // Скрываем превью
+        });
     </script>
     <script src="assets/js/app.js"></script>
 </body>
